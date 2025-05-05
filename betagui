@@ -1,0 +1,43 @@
+local ImGui = {
+	Animations = {
+		Buttons = {
+			MouseEnter = {
+				BackgroundTransparency = 0.3, -- Lighter gray
+			},
+			MouseLeave = {
+				BackgroundTransparency = 0.5, -- Darker gray
+			}
+		},
+		Tabs = {
+			MouseEnter = {
+				BackgroundTransparency = 0.2, -- Light gray
+			},
+			MouseLeave = {
+				BackgroundTransparency = 0.4, -- Medium gray
+			}
+		},
+		Inputs = {
+			MouseEnter = {
+				BackgroundTransparency = 0, -- White/opaque
+			},
+			MouseLeave = {
+				BackgroundTransparency = 0.3, -- Light gray
+			}
+		},
+		WindowBorder = {
+			Selected = {
+				Transparency = 0,
+				Thickness = 1,
+				Color = Color3.new(1, 1, 1), -- White border
+			},
+			Deselected = {
+				Transparency = 0.5,
+				Thickness = 1,
+				Color = Color3.new(0.5, 0.5, 0.5), -- Gray border
+			}
+		},
+	},
+	Windows = {},
+	Animation = TweenInfo.new(0.1),
+	UIAssetId = "rbxassetid://76246418997296"
+}
